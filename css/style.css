@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --first: #000;
+  --sicind: #fff;
+  --third: #fff75b;
+}
+
+
+
+a {
+  transition: 0.5s;
+}
+a:hover {
+  letter-spacing: 0.5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+  background-color: var(--third);
+  width: 90%;
+  margin: 20px auto;
+
+  box-shadow: 7px 10px 30px var(--first);
+}
+
+.container .box-left {
+  border-right: 3px solid red;
+}
+.container .box-left .contact {
+  padding: 5px 0;
+
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container .box-left .contact a {
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--first);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px var(--first);
+  transition: 0.5s;
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+h2 {
+  background-color: var(--first);
+  color: var(--sicind);
+  border-radius: 6px;
+  padding: 9px;
+  box-shadow: 10px 10px 30px var(--first);
+  margin-bottom: 5px;
+  transform: scale(90%);
+  font-size: 15px;
+  text-align: center;
+}
+.web {
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+.container .box-left h1 {
+  border-bottom: 2px solid var(--first);
+  width: 120px;
+  padding: 10px 0;
+  font-size: 25px;
+}
+.container .box-left h5 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 17px;
+}
+
+.icons i {
+  font-size: 24px;
+}
+
+.container .box-left .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.container .box-left img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.box-right {
+  padding: 20px;
+}
+.box-right h1 {
+  border-bottom: 1px solid var(--first);
+  padding: 10px 0;
+  font-size: 25px;
+}
+.box-right p {
+  padding: 10px;
+  line-height: 1.5;
+}
+.portfolio {
+  padding: 10px;
+}
+
+.portfolio ul {
+  margin-left: 50px;
+}
+
+.portfolio ul li {
+  padding: 9px;
+}
+
+@media (max-width: 991px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .container .box-left {
+    border: none;
+  }
+}
+
+
